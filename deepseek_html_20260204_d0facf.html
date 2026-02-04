@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清代歷史：鴉片戰爭至辛亥革命</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #8b4513;
+            --secondary-color: #d4a76a;
+            --dark-color: #2c1810;
+            --light-color: #f8f1e5;
+            --accent-color: #b22222;
+            --text-color: #333;
+            --light-text: #666;
+            --border-color: #e0d6c9;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif TC', serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--dark-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .desktop-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .desktop-nav li {
+            margin-left: 1.5rem;
+        }
+
+        .desktop-nav a {
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .desktop-nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .desktop-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: width 0.3s;
+        }
+
+        .desktop-nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* 主要内容 */
+        main {
+            padding: 2rem 0 4rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(44, 24, 16, 0.85), rgba(44, 24, 16, 0.9)), url('https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: var(--radius);
+        }
+
+        .hero h1 {
+            color: white;
+            border-bottom: 3px solid var(--secondary-color);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .period-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .badge {
+            background-color: rgba(212, 167, 106, 0.2);
+            color: var(--secondary-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(212, 167, 106, 0.5);
+            font-weight: 500;
+        }
+
+        /* 内容区域 */
+        .content-card {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.3rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: 3px solid var(--secondary-color);
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f5ee;
+        }
+
+        tr:hover {
+            background-color: #f1e9dc;
+        }
+
+        .image-placeholder {
+            background-color: #f0f0f0;
+            border: 1px dashed #ccc;
+            border-radius: var(--radius);
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+            color: var(--light-text);
+        }
+
+        .image-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #aaa;
+        }
+
+        .img-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--light-text);
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .quote {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--light-text);
+        }
+
+        .footnote {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footnote sup {
+            color: var(--accent-color);
+        }
+
+        /* 思维导图部分 */
+        .mindmap-section {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            margin-top: 3rem;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .mindmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .mindmap-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 优化后的侧边导航 */
+        .sidebar-toggle {
+            display: none;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            text-align: left;
+            position: relative;
+        }
+
+        .sidebar-toggle i {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s;
+        }
+
+        .sidebar-toggle.active i {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .sidebar-nav {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            position: sticky;
+            top: 6rem;
+        }
+
+        .sidebar-nav h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-nav h3 .close-sidebar {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .sidebar-nav ul {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .sidebar-nav a:hover {
+            background-color: rgba(139, 69, 19, 0.1);
+            color: var(--primary-color);
+        }
+
+        .sidebar-nav .active {
+            background-color: rgba(139, 69, 19, 0.15);
+            color: var(--primary-color);
+            font-weight: 600;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .desktop-nav {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content-row {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .sidebar-nav {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1100;
+                overflow-y: auto;
+                border-radius: 0;
+                padding-top: 4rem;
+                margin-bottom: 0;
+            }
+            
+            .sidebar-nav.show {
+                display: block;
+            }
+            
+            .sidebar-nav h3 .close-sidebar {
+                display: block;
+            }
+            
+            .sidebar-toggle {
+                display: block;
+            }
+            
+            .mobile-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                z-index: 1200;
+                padding: 5rem 2rem 2rem;
+                overflow-y: auto;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .mobile-nav.show {
+                transform: translateX(0);
+            }
+            
+            .mobile-nav ul {
+                list-style: none;
+            }
+            
+            .mobile-nav li {
+                margin-bottom: 1rem;
+            }
+            
+            .mobile-nav a {
+                display: block;
+                padding: 1rem;
+                font-size: 1.2rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .mobile-nav-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                color: var(--accent-color);
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .hero {
+                padding: 3rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 1.5rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .period-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .timeline {
+                padding-left: 1.5rem;
+            }
+        }
+
+        /* 打印样式 */
+        @media print {
+            header, .sidebar-nav, .sidebar-toggle, .hero, .mindmap-section {
+                display: none;
+            }
+            
+            body {
+                background-color: white;
+                font-size: 12pt;
+            }
+            
+            .content-card {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                margin-bottom: 1.5rem;
+            }
+            
+            a {
+                color: black;
+                text-decoration: underline;
+            }
+        }
+        
+        /* 新增样式 */
+        .content-row {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1199;
+        }
+        
+        .mobile-nav-overlay.show {
+            display: block;
+        }
+        
+        .section-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .section-subtitle {
+            color: var(--light-text);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        
+        .highlight {
+            background-color: rgba(212, 167, 106, 0.2);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .important-note {
+            background-color: rgba(178, 34, 34, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+        
+        .definition {
+            background-color: rgba(139, 69, 19, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin: 1.5rem 0;
+        }
+        
+        .definition dt {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .definition dd {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            vertical-align: top;
+        }
+        
+        .comparison-table th {
+            background-color: var(--dark-color);
+            color: white;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f5ee;
+        }
+        
+        .content-summary {
+            background-color: rgba(212, 167, 106, 0.1);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin: 2rem 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .content-summary h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .key-points {
+            margin-left: 1.5rem;
+        }
+        
+        .key-points li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--dark-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                清代<span>歷史學習網</span>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#opium-war">鴉片戰爭</a></li>
+                    <li><a href="#anglo-french-war">英法聯軍</a></li>
+                    <li><a href="#sino-japanese-war">甲午戰爭</a></li>
+                    <li><a href="#boxer-rebellion">義和團與八國聯軍</a></li>
+                    <li><a href="#reform-movement">圖強與維新運動</a></li>
+                    <li><a href="#revolution">革命運動</a></li>
+                    <li><a href="#mindmap">思維導圖</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- 移动端导航菜单 -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#opium-war" class="mobile-nav-link">鴉片戰爭</a></li>
+            <li><a href="#anglo-french-war" class="mobile-nav-link">英法聯軍</a></li>
+            <li><a href="#sino-japanese-war" class="mobile-nav-link">甲午戰爭</a></li>
+            <li><a href="#boxer-rebellion" class="mobile-nav-link">義和團與八國聯軍</a></li>
+            <li><a href="#reform-movement" class="mobile-nav-link">圖強與維新運動</a></li>
+            <li><a href="#revolution" class="mobile-nav-link">革命運動</a></li>
+            <li><a href="#mindmap" class="mobile-nav-link">思維導圖</a></li>
+        </ul>
+    </div>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <!-- 简介部分 -->
+        <section class="hero">
+            <h1>清代歷史：鴉片戰爭至辛亥革命</h1>
+            <p>從1840年鴉片戰爭到1911年辛亥革命，這段時期是中國從封建帝國轉向現代國家的重要轉折點。本學習網站提供完整的歷史資料、分析與視覺化內容，幫助深入理解這段關鍵歷史時期。</p>
+            <div class="period-badges">
+                <div class="badge">1840-1842：第一次鴉片戰爭</div>
+                <div class="badge">1856-1860：英法聯軍之役</div>
+                <div class="badge">1894-1895：甲午戰爭</div>
+                <div class="badge">1900-1901：八國聯軍之役</div>
+                <div class="badge">1911：辛亥革命</div>
+            </div>
+        </section>
+
+        <div class="content-row">
+            <!-- 侧边导航 -->
+            <aside>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-chevron-down"></i> 章節導航
+                </button>
+                <div class="sidebar-nav" id="sidebarNav">
+                    <h3>
+                        章節導航
+                        <button class="close-sidebar" id="closeSidebar">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </h3>
+                    <ul>
+                        <li><a href="#opium-war" class="active">鴉片戰爭</a></li>
+                        <li><a href="#anglo-french-war">英法聯軍之役</a></li>
+                        <li><a href="#sino-japanese-war">甲午戰爭</a></li>
+                        <li><a href="#boxer-rebellion">義和團和八國聯軍之役</a></li>
+                        <li><a href="#reform-movement">圖強運動 / 洋務運動</a></li>
+                        <li><a href="#reform-movement-2">維新運動</a></li>
+                        <li><a href="#revolution">革命運動</a></li>
+                        <li><a href="#mindmap">思維導圖</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- 主要内容区域 -->
+            <div class="main-content">
+                <!-- 鸦片战争部分 - 完整内容 -->
+                <section id="opium-war" class="content-card">
+                    <h1><i class="fas fa-cannabis"></i> 鴉片戰爭</h1>
+                    
+                    <h2>一、原因</h2>
+                    
+                    <h3>A. 遠因</h3>
+                    
+                    <h4>1. 天朝上國心態</h4>
+                    <p><strong>政治</strong>：清朝以天朝上國自居，視臣屬中國四鄰各國為「藩屬國」，屬國以外的國家包括西方國家為「化外蠻夷」，故無外交平等之觀念。</p>
+                    <p><strong>經濟</strong>：清廷以為中國地大物博，一切不假外求，故無需從外貿中獲利，視與外國貿易為「嘉惠遠人」的手段。而來華之國家必先向中國「朝貢」，才可進行貿易。</p>
+                    
+                    <h4>2. 英國對外擴張政策</h4>
+                    <p><strong>政治</strong>：十八世紀，英國國勢上昇，對外實行殖民侵略政策。單單在亞洲，英國已控制了印度，又佔領新加坡及緬甸部份，隨後擴張矛頭遂指向中國。</p>
+                    <p><strong>經濟</strong>：工業革命後，英國經濟蓬勃，為追求進一步發展，尋找原料產地及商品市場。中國為亞洲第一大國，故成其重要目標。</p>
+                    
+                    <h4>3. 兩國外交交涉不果</h4>
+                    <p>清初以來，英國向中國大量購買茶葉、生絲等貨物，中國卻鮮向英國購買商品，大量白銀由英國流入中國，嚴重損害英國利益。英國派使節來華交涉，企圖改善貿易關係，但交涉無果。</p>
+                    
+                    <h3>B. 近因</h3>
+                    
+                    <h4>4. 公行規條之限制</h4>
+                    <p>清廷實施獨口通商，只容許廣州一關口讓英國貿易。同時，清廷頒佈禁例，限制英國人在廣州之活動：必須入住商館；不准在廣州過冬；不得乘轎、攜同婦女入城、僱用中國人等等。</p>
+                    <p>公行作為中國與英國貿易的中間人，負責所有貿易：海關徵稅、承辦出入口貨品銷售、規定貨品價格和公文傳遞等事務。公行經常拖欠款項，令到英商不滿。</p>
+                    
+                    <h4>5. 未能改善關係</h4>
+                    <p>1833年，英國取銷東印度公司對華貿易的專利權，改派商務監督律勞卑來華。律氏不經公行，直接「平行款式」投遞公涵，要求與兩廣總督盧坤會面被拒。盧坤認為律勞卑不按公行慣例，下令停止貿易。律氏遂命軍艦炮轟虎門，兩國關係緊張。後英國指律氏擅用武力，令其退走。</p>
+                    
+                    <h4>6. 白銀急劇外流</h4>
+                    <p>英國為了改善對華貿易易差，從印度向中國輸入鴉片。乾隆初年，每年輸入400箱，道光初年，每年輸入2萬多箱。中國對英貿易優勢逆轉，由出超變為入超，大量白銀流出，每年達1億多萬元。白銀為當時之流通貨幣，銀源枯竭導致銀價急劇上昇，百姓要以大量銅錢換取白銀，使政府稅收減少，且造成嚴重通貨澎脹，損害經濟和民生。</p>
+                    
+                    <h4>7. 國民身心備受摧殘</h4>
+                    <p>由於鴉片禁而不絕，國人吸食情況越趨嚴重，城鄉市鎮煙館林立。上至官員、士兵，下至工商、倡優、僕隸、僧道，偏佈社會各階層。據估計，道光時期全國吸食鴉片的人數超過二百萬。吸鴉片令人精神萎靡，骨瘦如柴，國民體質日弱，軍隊亦趨癱瘓，社會衰頹。</p>
+                    
+                    <h4>8. 促使賄賂風氣盛行</h4>
+                    <p>不少地方官員及水師官兵接受賄賂，包庇煙商走私，甚至參與其事，導致吏治敗壞。煙販依靠賄賂打通關卡，鴉片逐年遞增，無從遏止。</p>
+                    
+                    <h3>C. 觸發點</h3>
+                    
+                    <h4>9. 林則徐禁煙</h4>
+                    <p>林則徐上書道光帝禁煙，道光深受感觸，於1838年任命林則徐為欽差大臣，前往廣州禁煙。林則徐下令外商交出鴉片，並書面保證以後不再販賣，如有違反，「貨盡沒官，人即正法」。英國駐華商務監督義律阻撓英商呈繳及具結。林則徐封鎖商館，義律及英商終交出鴉片，並退至澳門。林則徐將沒收二萬多箱鴉片在虎門銷毁。義律在英國國會演說中國封鎖商館絕糧絕水的慘無人道，議會以九票之差使英廷出兵。</p>
+                    
+                    <h4>10. 林維喜事件</h4>
+                    <p>1839年，有醉酒英國水兵在九龍尖沙咀毆斃村民林維喜，義律不肯交出兇犯，輕判了事。此舉既蔑視清朝法律主權，亦違反中國「殺人償命」的原則，林則徐交涉無效，下令驅逐澳門英人，兩國關係更形緊張。英國政府最後決定對中國採軍事行動，終爆發第一次鴉片戰爭。</p>
+                    
+                    <h2>二、經過</h2>
+                    
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>鴉片戰爭示意圖（原文件中的media/image3.jpg）</p>
+                    </div>
+                    <p class="img-caption">鴉片戰爭主要戰役與路線圖</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>階段</th>
+                                <th>時間</th>
+                                <th>戰爭概況</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第一階段</td>
+                                <td>1840年6月英軍封鎖珠江口起，至1841年1月義律發佈《穿鼻草約》止。</td>
+                                <td>a. 喬治‧懿律率英艦封鎖珠江口，派軍攻擊廈門，遭鄧廷楨擊退。英軍遂北上，陷定海，抵天津，脅北京。<br><br>
+                                    b. 道光帝派琦善交涉，英軍退回廣州，林則徐被革職。琦善與義律談判，在雙方政府未批准下，義律單方面公佈《穿鼻草約》，並派英軍強行登陸香港。</td>
+                            </tr>
+                            <tr>
+                                <td>第二階段</td>
+                                <td>1841年清廷宣戰起，至同年5月《廣州和約》止。</td>
+                                <td>a. 清廷得悉《穿鼻草約》之賠款、割地等內容，大為震怒，革琦善職，對英宣戰，派奕山督師。時英軍已佔虎門炮台，水師提督關天培奮戰陣亡。<br><br>
+                                    b. 奕山與英軍交戰，即告潰敗。英軍圍困廣州城，奕山向英人求和，與英國簽訂《廣州和約》，賠償軍費六百萬元。</td>
+                            </tr>
+                            <tr>
+                                <td>第三階段</td>
+                                <td>1841年8月英軍再攻廈門起，至1842年8月《南京條約》止。</td>
+                                <td>a. 英國不滿《穿鼻草約》的條件，撒回義律，改派砵甸乍領軍。英軍陷廈門、定海、寧波等地。清廷反攻失敗，委任耆英赴南京議和。<br><br>
+                                    b. 英軍續攻長江，佔上海、鎮江，抵南京。砵甸乍與耆英簽訂《南京條約》，鴉片戰爭結束。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>三、南京條約內容</h2>
+                    <ol>
+                        <li>割讓香港島</li>
+                        <li>中國向英國賠款2100萬銀元。</li>
+                        <li>開放廣州、福州、廈門、寧波、上海五處為通商口岸。英國人可以在五口租地建屋居住。</li>
+                        <li>取銷「公行」制度，英國商人可在中國自由貿易。</li>
+                        <li>承認英國享有領事裁判權。英國人在中國犯法，交由英國領事按英國法律審判。</li>
+                        <li>規定海關稅率相當於值百抽五。</li>
+                        <li>英國取得片面最惠國待遇。</li>
+                    </ol>
+                    
+                    <h2>四、影響</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 開不平等條約之先例<br>南京條約是近代中國與列強訂立的首項不平等條約，其後，美、法兩國先後威嚇清廷訂立《望夏條約》和《黃埔條約》。</td>
+                                <td>從此各國不斷製造紛端，與中國簽訂新約，在華奪取利益，中國慘變而為列強的魚肉。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 中國國際地位驟滑<br>鴉片戰爭中，清廷由廣州至天津一帶的海防可謂不堪一擊，完全暴露了中國軍事上的弱點。</td>
+                                <td>自是天朝上國的威信盡失，更引發列強侵略的野心。每當與中國爭執，皆訴諸武力解決，令戰爭頻仍。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 領土淪喪<br>據南京條約及其附則規定，清廷不單割讓香港島，又准許英人在通商口岸租地建屋。</td>
+                                <td>此後不少中國領土成為了列強的「殖民地」；列強在華的居留地亦形成了不受中國法律管制的「租界」。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 司法權備受剝削<br>英國享有領事判決權，英國僑民在中國犯罪，交由英國領事按英國法律辦理，清廷無權過問。</td>
+                                <td>清室喪失司法自主權後，外國人在中國橫行無忌，乃至欺凌中國官民。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 關稅自主權被奪<br>南京條約本已規定關稅由雙方秉公議定，附則更以現商品價格的百份之五為稅率，實行定額關稅。</td>
+                                <td>惡例一開，中國既不能藉提高關稅保護本土手工業，亦不能開拓稅源，以增國家收入。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 開最優惠國之惡例<br>虎門續約規定，中國如給其他國家特殊利益，英國可「一體均沾」，故謂「片面最惠國待遇」。</td>
+                                <td>先例一開，各國爭相效尤，遇有中外衝突，列強皆坐待分沾利益，互通聲氣，聯手侵略中國。</td>
+                            </tr>
+                            <tr>
+                                <td>7. 工業發展受阻<br>中國不能自主關稅，百份之五的低稅率使商品大量湧入中國傾銷，城鄉滿佈洋貨店。</td>
+                                <td>歐美技術發達，中國手工業遠遠落後，既無關稅保護，由是產品滯銷，無法競爭，難於發展。</td>
+                            </tr>
+                            <tr>
+                                <td>8. 百姓生活困頓<br>鴉片雖無合法，但走私比從前更盛；而且，清廷又把二千一百萬賠款轉嫁於人民頭上。</td>
+                                <td>由於鴉片並無限制輸入，加劇白銀外流；百姓同時為政府的無能繳付鉅額賠款，民生困苦。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>附：英國使節與中英外交概況</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>使節</th>
+                                <th>概況</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 馬甘尼</td>
+                                <td>a. 1792年，英國派馬甘尼率領使團，以賀乾隆帝壽辰為名來華，意圖改善對華通商條件。<br><br>
+                                    b. 中英雙方就覲見禮儀發生爭執，馬甘尼提出的改善商務要求，都被乾隆帝加以拒絕。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 阿美士德</td>
+                                <td>a. 1816年，英國派阿美士德來華，要求改善中英通商關係。<br><br>
+                                    b. 阿美士德抵京後，因覲見皇帝的禮節問題與清廷相持不下，被嘉慶帝驅逐回國。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 律勞卑</td>
+                                <td>a. 1834年，英國派律勞卑為駐華商務監督，管理在華英商。<br><br>
+                                    b. 律勞卑抵廣州後，不經公行，而以「平行款式」直接致函兩廣總督盧坤，要求接見，盧坤勸喻他遵守舊制。<br><br>
+                                    c. 律勞卑不肯屈從，盧坤遂下令停止中英貿易。後來英商不願貿易停頓，與公行達成和解。律勞卑只好撤出廣州。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 查理‧義律</td>
+                                <td>a. 1836年，英改任查理‧義律為駐華商務監督。<br><br>
+                                    b. 義律再次提出中英兩國官方文書採用「平行款式」，但兩廣總督鄧廷楨不肯讓步。<br><br>
+                                    c. 義律不滿，向英建議用武力迫使中國改善通商關係。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <!-- 英法联军部分 - 完整内容 -->
+                <section id="anglo-french-war" class="content-card">
+                    <h1><i class="fas fa-fighter-jet"></i> 英法聯軍之役</h1>
+                    <h2>一、原因</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 英對華貿易不張<br>即使南京條約規定，增加通商口岸和取銷公行制度等貿易限制，但由於中國小農經濟體系，農村消費極低；城市購買力則集中在鴉片。</td>
+                                <td>由是之故，英國對中國的貿易並無預期的高速增長，由是令英人企圖藉戰爭尋求更多利益。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 英、法、美要求修約<br>英國援引《南京條約》附則的「最優惠國待遇」，以及中美《望夏條約》十二年修約的規定，聯同法、美多次向清廷要求全面修約。</td>
+                                <td>英國一面進行武力威脅，一面提出協助鎮壓太平軍，但清廷依然不為所動，遂致其策動新的對華戰爭。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 廣州拒英人入城<br>鴉片戰爭後，廣州民眾情緒激昂，自組團練，堅拒英人入城，與其屢生衝突，外商只能按舊例在城外貿易。</td>
+                                <td>中英雖雙方多番交涉，仍然未能解決入城問題，兩國關係惡化，終觸發英法聯軍之役。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 清廷態度轉趨強硬<br>承上段言，清廷見民情可用，遂撤回主和派的耆英，先後改派徐廣縉和葉名琛為兩廣總督，應付英國。</td>
+                                <td>清室利用廣州「民氣」，對外立場轉趨強硬，中英衝突逐漸加劇，終致兵戎相見。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 清廷外交政策失誤<br>承上段言，咸豐帝既指示不得與外國修約，又要求不可激生事端，故葉名琛對各國公使的要求，只一味敷衍。</td>
+                                <td>清廷外交政策矛盾，主事官員難以拿準，終讓列強有機可乘，發動戰爭。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>二、觸發點</h2>
+                    <div class="content-summary">
+                        <h4>主要觸發事件</h4>
+                        <ul class="key-points">
+                            <li><strong>亞羅號事件（1856年）</strong>：中國水師在廣州緝私，登上香港註冊的中國船亞羅號，逮捕水手，並以船隻登記過期，扯下英國國旗，其間踐踏到英國國旗，英國正尋求藉口進兵中國，亞羅號事件成為英人侵略的機會。</li>
+                            <li><strong>西林教案（1856年）</strong>：法國馬賴神父潛入內地傳教，被西林知縣以「勾結亂黨」罪名處死。法國提出抗議，要求賠償及懲兇，遭清廷拒絕。與英國聯合出兵。</li>
+                            <li><strong>廣州衝突（1857年）</strong>：阿羅號事件後，英國駐廣東領事巴夏禮炮轟兩廣總督衙門。由廣州人組成的三元里平英團練，焚燒英國商館報復。巴夏禮由是促請英廷派兵侵華。</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>三、經過</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>時間</th>
+                                <th>戰爭概況</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第一階段</td>
+                                <td>1857年，英法入城通牒至1858年中英、中法答訂《天津條約》</td>
+                                <td>a. 英國及法國向葉名琛發出最後通牒，要求入城、修約及賠償損失。葉既不答應要求，也不備戰，並撤退團練兵勇，以求「息兵」。結果聯軍迅即攻佔廣州，葉被俘。<br><br>
+                                    b. 1858年初，聯軍北上，攻陷大沽、天津，清廷派桂良、花沙納議和，與英、法簽訂《天津條約》，戰事暫告一段落。</td>
+                            </tr>
+                            <tr>
+                                <td>第二階段</td>
+                                <td>1859年，英法公使前往北京換約至1860年中英、中法答訂《北京條約》</td>
+                                <td>a. 清室派遣僧格林沁在大沽重新佈防，不准外船駛入。1859年，英法公使前往北京換約，他們拒絕了朝廷指定的登陸地點，硬闖大沽失敗，退回上海。<br><br>
+                                    b. 1860年，英法關軍再度北上，先佔舟山、煙台、旅順，繼而陷大沽、天津、北京，在京城姦淫殺掠，火燒園明園。咸豐帝逃往熱河，恭親王奕訢留守談判。最後，中、英、法在俄國調停下，訂《北京條約》，戰事結束。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>英法聯軍之役示意圖（原文件中的media/image4.jpg）</p>
+                    </div>
+                    <p class="img-caption">英法聯軍進攻路線圖</p>
+                    
+                    <h2>四、天津條約內容</h2>
+                    <ol>
+                        <li>外國商船和軍艦皆可在內河停泊、行駛。</li>
+                        <li>中國與外國互派公使，外國公使長駐北京。</li>
+                        <li>外國人在中國犯罪或牽涉訴訟，由外國領事辦理。</li>
+                        <li>增開牛莊、登州、台灣、淡水、潮州、瓊州、鎮江、南京、九江、漢口等十個口岸。</li>
+                        <li>進出口貨除絲、茶、鴉片外，一般抽百份之五的定額關稅。</li>
+                        <li>鴉片為「洋藥」，可合法進口。</li>
+                        <li>外國人可在中國自由遊覽、通商和傳教。</li>
+                        <li>對英賠償四百萬兩、對法賠償二百萬兩。</li>
+                    </ol>
+                    
+                    <h2>五、北京條約內容</h2>
+                    <ol>
+                        <li>除北京條約更改之處外，原《天津條約》繼續生效。</li>
+                        <li>割讓九龍半島於英國。</li>
+                        <li>增天津為商埠。</li>
+                        <li>准許華工出洋。</li>
+                        <li>准許傳教士在各省租買田地，建造房屋和教堂</li>
+                        <li>對英法之賠償各增至八百萬兩。</li>
+                    </ol>
+                    
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>火燒圓明園示意圖（原文件中的media/image7.jpg）</p>
+                    </div>
+                    <p class="img-caption">英法聯軍火燒圓明園</p>
+                    
+                    <h2>六、影響</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 領土喪失<br>《北京條約》規定，中國租借九龍半島予英國；且外國紛紛在中國領土內成立「租界」。</td>
+                                <td>列強進一步吞蝕中國的領土，霸佔殖民地；租界則成為「國中之國」，由外國人控製。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 門戶大開<br>《天津條約》規定，列強獲得中國內河的航行權，商船和軍艦皆可在內河停泊、行駛。</td>
+                                <td>經濟上，大大打擊了中國的航運業；軍事上，讓列強盡佔先機，國防如同虛設。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 侵吞藩屬<br>英法聯軍之役，清廷猛將僧格林沁亦一敗塗地，中國之國防無法與西方的船堅炮利對抗。</td>
+                                <td>自此列強不單向中國內侵，亦進佔清廷的藩屬，如越南、緬甸等地，中國勢力日損。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 趨生改革<br>《天津條約》規定中國與外國互派公使，准許外國公使長駐北京後，朝廷又設立「總理各國事務衙門」，專門與各國交涉。</td>
+                                <td>中國在英法聯軍之役再度挫敗；奕訢、文祥等與列強往還的親貴，認識到西洋軍力的強大，「師夷之長技以制夷」的洋務運動的出現。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 俄國略地<br>俄國自持調停有功，迫清廷簽訂中俄《璦琿條約》、《天津條約》、《北京條約》，吞併黑龍江以北、烏蘇里江以東的土地。</td>
+                                <td>此後俄國不斷侵蝕中國東北及西北的領土。取得暖水港海參威後，更成為其遠東海軍基地。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 失關稅自主權<br>《天津條約》附約規定，外國人可幫助中國海關稅務，造成各口岸由英人長期出任「海關總稅務司」。而且，關稅為定額稅，非按貨價而浮動。</td>
+                                <td>自此中國關稅由外國人控製，朝廷收入嚴重受損。另外，海關總稅務司名為中國官員，卻屢屢干涉中國內政、外交等事務。</td>
+                            </tr>
+                            <tr>
+                                <td>7. 白銀流出<br>《天津條約》則規定，鴉片正式列為合法商品。</td>
+                                <td>由是鴉片得以大量輸入和傾銷，國民健康大受摧殘，白銀亦不斷流出，嚴重影響經濟民生。</td>
+                            </tr>
+                            <tr>
+                                <td>8. 教案頻生<br>《天津》和《北京》條約規定，准許外國人在中國傳教，並容許傳教士在各省租買田地、建造房屋和教堂。</td>
+                                <td>部份教士專橫過甚，乃至包庇教徒故作非為。由是令國民仇視外人，以至教案頻生，殺逐教士屢見不鮮。</td>
+                            </tr>
+                            <tr>
+                                <td>9. 中外衝突<br>《天津條約》進一步擴大領事裁判權，外國人在中國犯罪或牽涉訴訟，由本國領事辦理，往往獲得輕判。</td>
+                                <td>由是外民恣行不法，欺凌華人，造成國人懼外、仇外以至排外心理。而且，隨列強深入內地，民間衝突無日無之。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>附：下圖展示俄國侵略中國領土的進程</h2>
+                    <div class="image-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>俄國侵佔中國領土示意圖（原文件中的media/image1.jpg）</p>
+                    </div>
+                    <p class="img-caption">俄國通過不平等條約侵佔中國領土示意圖</p>
+                    
+                    <h2>附：對葉名琛之評價</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>正面</th>
+                                <th>負面</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>論點：</strong><br>葉名琛和列強打交道雖然昏庸無知，但並無獻媚妥協。<br><br>
+                                    <strong>論據及論證：</strong><br>
+                                    a. 他面對英國藉亞羅號事件施壓，沒有屈服，盡力維護國家尊嚴。<br><br>
+                                    b. 在咸豐帝盡量避戰的要求下，能堅持不准列強入廣州城。<br><br>
+                                    c. 被俘印度後，他也沒有屈膝求生，最終被囚至死。<br><br>
+                                    <strong>結論：</strong><br>
+                                    同情地了解，他亦頗具傳統士大夫氣節，稱其六不總督未免過刻。</td>
+                                <td><strong>論點：</strong><br>葉名琛不屑講求外交之道，少與各國溝通；又未嘗審察形勢，為戰爭作準備。<br><br>
+                                    <strong>論據及論證：</strong><br>
+                                    a. 他在處理亞羅號事件，對英國人置諸不理，拒絕與英國總督包令見面，以致未能解決事件。<br><br>
+                                    b. 當英軍闖入省河挑釁，下令各炮台守兵不許抵抗，且大撤團練兵勇，只迷信扶乩，以求息兵。<br><br>
+                                    <strong>結論：</strong><br>
+                                    由是之故，時人譏葉名琛為「不戰不和不守不死不降不走」的六不總督，確為的當之論。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <!-- 甲午战争部分 - 完整内容 -->
+                <section id="sino-japanese-war" class="content-card">
+                    <h1><i class="fas fa-ship"></i> 甲午戰爭</h1>
+                    
+                    <h2>一、日本崛起原因及侵略</h2>
+                    <p>1868年起，明治天皇推行「明治維新」，海軍經費不足，明治天皇節衣儉食，親自掏腰包捐錢，日本官員深受感觸，上行下效，日本才得以購買新型海軍軍艦。使日本海軍與北海艦隊有一戰之力。</p>
+                    
+                    <p>日本建立以明治天皇為中心的中央集權，學習西方制度與技術，發展工業及建立近代化正規軍等，以實現富國強兵。日本國力透過明治維新日益強大，「不甘於島國之境」，急欲向外擴張，於是確立「大陸政策」，圖謀先吞併一水之隔的朝鮮，作為入侵中國東北的踏腳石，繼而進侵全中國。</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>事件</th>
+                                <th>概況</th>
+                                <th>簡析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. <strong>流求事件與《中日協定》</strong> (同治十二年，1873年)</td>
+                                <td>日本藉口流求水手被台灣土著殺害，派兵攻台，並策封流球王。由於日本不能一舉致佔台灣，故接受美國調停，與清廷訂立《中日協定》，賠償日本50萬兩。</td>
+                                <td>條約中，中國承認日本為流球出兵是「保民義舉」，等於承認日本對流球的保護權，由是失去對流球的宗主國地位。到光緒五年(1879)，日本廢流球王，併為沖繩縣。</td>
+                            </tr>
+                            <tr>
+                                <td>2. <strong>《江華條約》</strong> (光緒元年，1875年)</td>
+                                <td>日本軍艦駛進朝鮮江華島測量水位，挑釁朝鮮。朝鮮守軍發炮攻擊，日軍遂乘機侵略，迫朝鮮簽訂《江華條約》。</td>
+                                <td>條約中，日本承認朝鮮為獨立國，旨在否定清廷對朝鮮的宗主權，但清廷卻並未對此反對。</td>
+                            </tr>
+                            <tr>
+                                <td>3. <strong>壬午事變與《濟物浦條約》</strong> (光緒八年，1882年)</td>
+                                <td>朝鮮王朝分裂為新舊兩派。舊派以大院君為首，親華；新派(開化黨)以金玉均為首，親日。光緒八年(1882)，大院君發動兵變，焚日本使館，史稱「壬午事變」，日本遂有藉口出兵保護僑民。其後，日本與朝鮮簽訂《濟物浦條約》，取得在朝鮮的駐兵權。</td>
+                                <td>「壬午事變」，清廷也有派兵朝鮮，故《濟物浦條約》後，開中、日兩國共同在朝鮮駐兵之始。</td>
+                            </tr>
+                            <tr>
+                                <td>4. <strong>甲申事變與中日《天津條約》</strong> (光緒十一年，1885年)</td>
+                                <td>光緒十年(1884)，日本鼓動新黨政變，被袁世凱率軍平定，日使自焚使館而逃，史稱「甲申事變」。日本派兵朝鮮，迫朝鮮簽訂《漢城條約》賠償日本。光緒十一年(1885)，清廷與日本簽訂中日《天津條約》，商定共同退兵朝鮮，但日後兩國任何一國出兵朝鮮，須與對方先行照會。</td>
+                                <td>中日《天津條約》置朝鮮為中、日兩國的共同保護國，兩國對朝鮮地位相等。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>5. 導火線：東學黨事件 (光緒二十年，1894年)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>概況</th>
+                                <th>簡析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>東學黨是一反西學的組織。光緒二十年(1894)，他們四處搗亂。日本遂以此為藉口，要求中國共同出兵平亂。亂平後，日本拒絕撤軍，並脅迫朝鮮王與中國脫離關係。</td>
+                                <td>日本早預備發動侵略朝鮮以至中國東北的戰爭，但清廷仍希望以外交手段斡旋，最終失卻先機，受制於人。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>二、甲午戰爭經過</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>戰役</th>
+                                <th>經過</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 豐島戰役</td>
+                                <td>豐島戰役中，日本偷襲清廷運兵船高陞號，突擊牙山的清軍，由是掀起甲午戰爭。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 平壤戰役</td>
+                                <td>平壤戰役中，日軍攻陷平壤，總兵左寶貴戰死，主帥葉志超過鴨綠江，撤回中國。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 黃海海戰</td>
+                                <td>在黃海海戰中，北洋艦隊護送陸軍增援朝鮮，途中遭日軍突襲，經遠號、致遠號等船艦被擊沉，艦長鄧世昌、林永升戰死。北洋艦隊退守威海衞，失制海權。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 遼東戰役</td>
+                                <td>在遼東戰役中，日本海陸進兵，一破大連，再破旅順。日軍在旅順屠殺2萬中國人。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 威海衞戰役</td>
+                                <td>在威海衛戰役，日軍從海陸兩路夾擊，攻威海衞，提督丁汝昌、總兵楊用霖和劉步蟾自殺。北洋艦隊全軍覆沒。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 遼中戰役</td>
+                                <td>在遼中戰役中，日本陸軍陷牛莊、營口等地；海軍破澎湖，控制台灣海峽。四月，中日兩國簽訂《馬關條約》。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>甲午戰爭示意圖（原文件中的media/image6.jpg）</p>
+                    </div>
+                    <p class="img-caption">甲午戰爭主要戰役示意圖</p>
+                    
+                    <h2>三、馬關條約</h2>
+                    <ol>
+                        <li>中國承認朝鮮獨立自主。</li>
+                        <li>割讓遼東半島、台灣及澎湖列島給日本。</li>
+                        <li>賠償日本軍費2億銀兩。</li>
+                        <li>開放沙市、重慶、蘇州、杭州為商埠，日船可沿河駛入上述商埠口岸。</li>
+                        <li>允許日本在中國通商口岸設立工廠，產品運銷內地時，可免收內地稅。</li>
+                        <li>日本可享有最惠國待遇及領事裁判權。</li>
+                        <li>《馬關條約》簽訂後，俄國聯同德、法，三國干涉，迫日本交還遼東半島，但中國須繳付「贖遼費」3 000萬銀兩。</li>
+                    </ol>
+                    
+                    <h2>四、甲午戰爭失敗原因</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 和戰不定<br>其時對日戰爭之取向，可分為主戰派和主和派。德宗（光緒帝)受老師翁同龢影響，加上力圖振作，主張開戰；慈禧太后是年60，恐戰爭影響其「萬壽慶典」，故主張妥協。</td>
+                                <td>德宗雖堅決主張對日作戰，但當時掌握最高權力的卻是慈禧太后。後來，日本擴大侵略，她轉而支持開戰，但已然為時太晚。因此，清廷和戰不定，準備不足，故遭敗績。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 誤信列強<br>李鴻章一直對日本採取「避戰求和」的政策，以為透過俄、英等列強居中調停，可以解決問題。在中日開戰後，李鴻章請美國出面斡旋，遣使赴日求和，結果發生了「廣島拒使」事件</td>
+                                <td>李鴻章過份依賴外交手段，卻不防列強各懷鬼胎。俄國望中日戰爭，坐收漁利；英國則望日本壯大，牽制俄國。由是形勢被動，倉卒應戰，最終慘敗於日本。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 事權分割<br>財政上，海軍並無專項經費，需由李鴻章自行與各省商討籌組。軍事上，李鴻章只能控制北洋艦隊和淮軍，卻無權調動南洋艦隊、福建水師以及其他陸軍。</td>
+                                <td>由於各省自顧不暇，也不欲李鴻章獨大，故不願合作，到戰爭爆發，一切已然太遲。戰爭期間，李不能發動其他水師共同作戰，且海陸軍也各自為政，缺少協同，由是敗於日本。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 軍備不足<br>自平定太平天國，洋務運動興起後，清廷漸次向外國訂購軍艦。可是，自光緒十四年(1888)後，海軍軍費被挪用興建頤和園，朝廷已再無經費購入新式船艦和武器。</td>
+                                <td>當時，北洋艦隊航速最快的巡洋艦「致遠」和「靖遠」，只能與對手的一般戰艦看齊；且僅配備少量速射炮，裝備遠遠落後於日本。由於軍備不足，自是慘敗於日軍手下。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 管理不善<br>甲午戰爭前，北洋艦隊竟改用德國陸軍軍官為總教習；又以不懂水戰的淮軍騎兵將領丁汝昌任海軍提督。而且，就算北洋艦隊和淮軍，以至其他陸軍皆疏於操練。</td>
+                                <td>海陸作戰環境截然不同，不能混淆行事，尤其任命陸軍出身的丁汝昌，更引發艦隊內的不滿。至於操練不足，自是軍紀敗壞，難怪不少兵將臨陣退縮。如此軍隊，戰敗自是理所當然。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 戰術錯誤<br>例如，黃海海戰中，以陸軍常用的「雁行陣」對付日本；總兵劉步蟾，臨敵易陣，改原有兩行縱列式的戰陣為橫列式，令艦隊被日軍逐一擊沉。以至丁汝昌決定退守威海衞。</td>
+                                <td>承上段言，北洋艦隊作戰時竟採用陸上戰術，自然難與敵軍抗衡。而且，退守威海衞，令艦隊無所作用，反遭日軍圍剿，丁汝昌不理李鴻章主動出擊的命令，終致甲午的慘敗。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>五、甲午戰爭、馬關條約影響</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>重點</th>
+                                <th>內容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 面臨瓜分危機</td>
+                                <td>詳參下節</td>
+                            </tr>
+                            <tr>
+                                <td>2. 激發救國運動</td>
+                                <td>中國在甲午戰爭中慘敗，激發了民族的覺醒，明白光靠船堅炮利不足以圖強救國。清末，政治變革有兩大主流：一是以康有為為首倡導的維新運動，主張改革政治；一是由孫中山領導的革命運動，以推翻滿清為目標。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 被迫大舉外債</td>
+                                <td>《馬關條約》規定賠款2億銀兩，加上贖遼費3000萬銀兩，接近清廷每年收入的3倍。為了繳付巨額賠款，清廷大舉外債，並以關稅、鐵路、礦山等利權作抵押，列強遂得以控制清廷的財政，進一步打擊中國的經濟。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 打擊中國工業</td>
+                                <td>日本獲准在各通商口岸開設工廠，列強援例共享，紛紛在中國設廠生產，然後傾銷中國內地，嚴重打擊在洋務運動後期開始萌芽的民族工業，使中國的經濟更形枯竭。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 引起日俄戰爭</td>
+                                <td>《馬關條約》簽訂後，俄國便聯合德、法兩國，脅迫日本退還遼東半島。日俄關係自此惡化。俄國向中國租借旅順、大連，將東北劃入其勢力範圍，激化日俄間的矛盾。1904年，兩國竟然在中國的東北爆發戰爭，嚴重損害中國人民的生命財產。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 伏下日後大患</td>
+                                <td>日本於甲午戰後一躍成為東亞的強國，先後奪取了台灣和朝鮮。日本在戰後獲得巨額賠款，又在台灣和朝鮮掠奪了大量的資源，加速了本國的工業和軍事建設，令侵華野心膨脹，逐步走上軍國主義的道路。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>六、列強瓜分中國</h2>
+                    <h3>A. 背景</h3>
+                    <ol>
+                        <li><strong>甲午戰爭失敗</strong>：中國於甲午戰爭失敗後，列強唯恐日本獨佔利益，打破各國在華的勢力平衡，於是展開激烈爭逐，掀起了瓜分中國的狂潮。</li>
+                        <li><strong>三國干涉還遼</strong>：俄國不容日本染指東北，遂聯合德、法兩國，迫使日本歸還遼東半島予中國。事後三國向中國索取報酬，以擴大在華利益。</li>
+                        <li><strong>中俄簽訂密約</strong>：三國干涉還遼後，清廷希望「聯俄制日」。俄國遂與清廷簽訂密約，取得了在中國東北修築鐵路、開採礦山的特權。消息傳開後，列強紛紛向中國租借港灣，並強行將中國的土地劃為其勢力範圍。</li>
+                    </ol>
+                    
+                    <h3>B. 列強勢力範圍</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>國家</th>
+                                <th>勢力範圍</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 德國</td>
+                                <td>a. 德國以兩名傳教士在山東被殺為藉口，出兵佔領<strong>膠州灣</strong>。<br><br>
+                                    b. 德國又強迫中國簽訂租借條約，並取得修築鐵路、開採礦山及優先承辦各種工程等權利，山東成為德國的勢力範圍。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 俄國</td>
+                                <td>a. 俄國訛稱幫助清廷抵抗德國，派軍艦進佔<strong>旅順、大連</strong>，然後強行租借。<br><br>
+                                    b. 俄取得南滿鐵路的修築權，並乘勢把<strong>東北</strong>納入其勢力範圍。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 法國</td>
+                                <td>a. 法國以傳教士在廣東被殺為藉口，強迫清廷租借<strong>廣州灣</strong>，並享有該地修築鐵路與架設電線權。<br><br>
+                                    b. 法國又要求清廷答應不割讓<strong>雲南、廣西及廣東</strong>三省給他國，西南、嶺南一帶遂成為法國勢力範圍。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 英國</td>
+                                <td>a. 英國迫使清廷承認長江流域為其勢力範圍，並以法國租借廣州灣為藉口，與清廷訂立《展拓香港界址專條》，租借<strong>九龍半島北部及香港附近的島嶼</strong>，合稱<strong>新界</strong>。<br><br>
+                                    b. 英國以維持華北均勢為由，強行租借山東半島的<strong>威海衞</strong>。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 日本</td>
+                                <td>日本強迫清廷答應不割讓福建給他國，<strong>福建</strong>成為日本的勢力範圍。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>C. 列強在華勢力範圍圖</h3>
+                    <div class="image-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>列強在華勢力範圍圖（原文件中的media/image2.jpg）</p>
+                    </div>
+                    <p class="img-caption">列強在華劃分勢力範圍示意圖</p>
+                    
+                    <h2>七、美國門戶開放政策</h2>
+                    <h3>A. 背景：</h3>
+                    <p>列強在中國劃分勢力範圍時，美國無暇東顧。直至1898年打敗西班牙，奪取菲律賓後，美國遂着意遠東的貿易市場，尤其在中國的龐大商業機會。1899年，美國國務卿海約翰提出「門戶開放政策」，得到英國的支持。由於其時沒有一個國家能獨吞中國，各國為免發生衝突，損害自身利益，於是接納美國的建議。八國聯軍之役後，美國重申門戶開放政策。</p>
+                    
+                    <h3>B. 內容：</h3>
+                    <ol>
+                        <li>各國對他國在中國所取得的任何勢力範圍、租借地、通商口岸和既得利益，不得加以干涉。</li>
+                        <li>各國勢力範圍內的出口貨物，均由中國按照現行約定的關稅率徵收。</li>
+                        <li>在各國勢力範圍內，向他國船舶徵收的港口稅及貨物的鐵路運費，應與其本國的港口稅和運輸費相等。</li>
+                        <li>各國必須保持中國的領土與行政完整。</li>
+                        <li>各國在華商業機會均等。</li>
+                    </ol>
+                </section>
+                
+                <!-- 义和团与八国联军部分 - 完整内容 -->
+                <section id="boxer-rebellion" class="content-card">
+                    <h1><i class="fas fa-fist-raised"></i> 義和團和八國聯軍之役</h1>
+                    
+                    <h2>一、義和團事件之背景</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 仇外情緒<br>鴉片戰爭以來，列強不斷在中國奪取利益，迫使清廷訂立各不平等條約，如南京條約、北京條約、曖暉條約、馬關條約等等。</td>
+                                <td>眼見國家飽受欺凌，甚至面臨被瓜分的危機，由是激發強大烈的仇外情緒，導致反洋的義和團出現，以及繼之連串的排外活動。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 民生日困<br>鴉片戰爭後，中國被迫開放市場；甲午戰爭後，列強紛紛在華設廠經營，傾銷商品；又發展礦務、紡紗、自來水等新興事業。</td>
+                                <td>由是嚴重打擊剛起步的民族工業和傳統的農村經濟。百姓生活艱難，轉而仇恨外人，以至加入了反洋組織，義和團由是崛起。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 教案頻生<br>北京條約之後，傳教士來華日眾。天主教、基督教反對祭祖、祀孔，抵觸中國傳統；部份教士甚至袒護教徒，欺壓百姓。</td>
+                                <td>由於不平等條約給予教士「治外法權」，在中國橫行霸道，引起國人極度不滿。反洋教的情緒日益高漲，乃有義和團事件之發生。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 天災頻仍<br>華北地區連年發生天災，例如黃河數度決堤，山東區域達六十州縣受災。其後直、魯等地又發生旱災，人民變賣子女。</td>
+                                <td>百姓生活於水深水熱之中，無以為生，朝廷又不能有效善後，遂淪為盜匪。到義和團與起，民眾大加響應，表現對社會之不滿。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 迷信無知<br>朝廷親貴，如載漪、載勛、剛毅；地方大員，如李秉衡、張汝梅、毓賢、裕祿等，以為義和團可資利用，作為打擊洋人的工具。</td>
+                                <td>由於對列強無計可施，故有迷信拳民神功護體的法術，能夠對付洋人；亦有袒護包庇拳民者，借助民間力量反洋。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 慈禧報復<br>戊戌政變後，慈禧不滿英、日庇護康有為、梁啟超。她欲廢罷光緒帝，外國不接受；欲立太子，使節亦不支持。</td>
+                                <td>慈禧對義和團的態度本搖擺不定，但她對外人的不滿恨情緒日增，故終決定利用拳民攻擊洋人，發洩心頭之恨。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>二、義和團的崛起與發展</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>內容</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 源流</td>
+                                <td>義和團原名義和拳，地理上，起源於山東、河北一帶；性質上，則來自北方民間秘密宗教──白蓮教，自稱能降神附體，刀槍不入。</td>
+                                <td>義和團本是反清組織。自英法聯軍之役後，洋人洋教每多為非作歹，義和拳遂反洋反教。甲午戰爭後，則甚至轉而支持清室。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 山東崛起</td>
+                                <td>義和拳得山東巡撫李秉衡支持，勢力迅速發展；繼任的張汝梅，改義和拳為團練義和團；再繼任的毓賢亦袒護義和團襲擊欺壓民眾的教民。</td>
+                                <td>義和團得地方官員支持，正名後，遂以「扶清滅洋」為號召，專事殺害洋人及教民、搗毁教堂、鐵路及電線等與洋人有關的事物。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 朝廷鎮壓</td>
+                                <td>義和團的反洋反教活動，引起各國不滿，遂向清廷施壓。朝廷改命袁世凱出任山東巡撫，武力殲滅團民，死者無數。</td>
+                                <td>清廷中央此時並不認同義和團的舉動，恐怕影響與列強的關係，故實施武力鎮壓。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 團民入京</td>
+                                <td>義和團輾轉到直隸活動，以至入京。入京後，炸毁比利時、奧地利、荷蘭和意大利四使館，殺傷外國兵、教民及傳教士三百多人。</td>
+                                <td>直隸總督裕祿蹤容團民，慈禧默許入京，朝廷轉而支持義和團反洋反教之行徑。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>三、八國聯軍之役的經過</h2>
+                    <ol>
+                        <li><strong>聯軍出兵</strong>：1900年5月，各國駐華公使舉行會議，決定聯合出兵鎮壓義和團。俄、英、美、法、德、意、日、奧八國之聯軍，由英國海軍將領西摩爾率領，從天津租界出發。途中，聯軍遭義和團和清軍的強烈抵抗，一度退回。</li>
+                        <li><strong>慈禧宣戰與逃亡</strong>：6月，慈禧召開會議，商討對策，最後決定向各國宣戰。聯軍攻佔大沽炮台，繼而天津失陷，提督聶士誠戰死。聯軍續朝京進發，李秉衡、裕祿戰死。8月，聯軍入京，慈禧挾光緒帝逃往西安。</li>
+                        <li><strong>東南互保</strong>：清廷向各國宣戰後，東南各省督撫拒不受命。兩江總督劉坤一、湖廣總督張之洞與各國訂立《東南互保條約》，李鴻章、袁世凱等亦表贊同。條約規定上海租界歸各國共同保護；各省禁義和團，外國僑民的生命財產由督撫保護，外國戰艦不入長江。</li>
+                    </ol>
+                    
+                    <h2>四、辛丑條約內容</h2>
+                    <ol>
+                        <li>拆毁北京至大沽的所有炮台，各國可在北京至山海關一帶駐兵防守。</li>
+                        <li>在北京設立使館區，不准中國中在區內居住，各國可以派兵駐守。</li>
+                        <li>改總理各國事務衙門為「外務部」，改善外使覲見的禮節。</li>
+                        <li>清廷向各國賠償4億5千萬兩，分39年清還，年息4厘，共銀9億8千多萬。</li>
+                        <li>懲處支持義和團之官員，禁止各種仇外組織；屠殺外國人的地區，停止科舉5年。</li>
+                        <li>與各國重新修訂商約。</li>
+                    </ol>
+                    
+                    <h2>五、影響</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 門戶洞開<br>辛丑條約規定，列強可駐兵北京的使館區，以至山海關沿線要地；清廷亦要拆毁北京至大沽的炮台。</td>
+                                <td>由是破壞中國的領土完整，削弱中國的防衞，門戶洞開。在軍事上處於極劣之勢，任由列強宰割而不能反抗。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 干預內政<br>辛丑條約規定，改總理衙門為外務部，更改外使覲見的禮節；懲處支持義和團之官員，屠殺外國人的地區，停止科舉5年。</td>
+                                <td>自鴉片戰爭後，列強已屢屢干預中國之主權，但未見於喪權辱國條約內文；辛丑條約，則各國明目張膽地干涉中國的內政。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 民生日苦<br>辛丑條約規定，清廷向各國賠償4億5千萬兩，分39年清還，年息4厘，共銀9億8千多萬。</td>
+                                <td>天文數字的戰爭賠款轉嫁於百姓之上，民生困頓；且中國已關稅等抵押賠款，令鐵路、採礦等利權落入外人手中，經濟命脈受控。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 地位下降<br>義和團事件中，團民炸毁大使館，殺傷外國兵、外國人、教民及傳教士，以至破壞鐵路及電線等與洋人有關的事物。</td>
+                                <td>鴉片戰爭後，中國飽受欺凌，但仍被視為文明國度。義和團事件後，中國被目為野蠻國家，國際聲譽由是大損。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 民族自卑<br>八國聯軍之役後，國人不得不承認遠遠落後於外國，天津、北京更有民戶寫上「某國良民」的標籤扁額。</td>
+                                <td>國民的自信心跌至谷底，從以前的輕外、仇外，變成懼外、媚外，一切以外國為馬首是贍，此等情況可謂自今未減。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 列強搶掠<br>八國聯軍入京後，殺人放火，姦淫擄掠，無所不為。京城之內，珍貴文物被搶劫一空，如《永樂大典》的孤本。</td>
+                                <td>繼英法聯軍之役後，京師再一次受到列強搶掠，不少國寶流入歐洲，被賣到外國的博物館去，誠中國的恥辱。</td>
+                            </tr>
+                            <tr>
+                                <td>7. 地方勢力坐大<br>八國聯軍之役中，南方督撫抗拒中央宣戰的命令，私自跟列強簽訂《東南互保條約》。戰後清廷不加追究，且作嘉許。</td>
+                                <td>由是地方勢力澎脹，逐漸脫離朝廷的控制。此既影響清末的政局，甚至延伸到民初，出現軍閥割據之情勢。</td>
+                            </tr>
+                            <tr>
+                                <td>8. 激發革命<br>義和團事件和八國聯軍之役，朝廷竟倚賴怪力亂神的義和團，以為可與外人對抗，充份顯示出清室的無知和無能。</td>
+                                <td>有識之士明白到清朝已無可指望，必須推翻。不少熱血青年也紛紛加入革命行列，促成辛亥革命的成功。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>附：《南京條約》、《天津條約》及《北京條約》、《馬關條約》、《辛丑條約》比較表</h2>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>比較項</th>
+                                <th>《南京條約》</th>
+                                <th>《天津條約》及《北京條約》</th>
+                                <th>《馬關條約》</th>
+                                <th>《辛丑條約》</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 簽約國家</td>
+                                <td>英國</td>
+                                <td>英國、法國</td>
+                                <td>日本</td>
+                                <td>英、美、德、法、俄、日、意、奧、西、荷、比</td>
+                            </tr>
+                            <tr>
+                                <td>2. 賠款</td>
+                                <td>2 100萬銀元</td>
+                                <td>英法各800萬銀兩</td>
+                                <td>20 000萬銀兩</td>
+                                <td>45 000萬銀兩</td>
+                            </tr>
+                            <tr>
+                                <td>3. 割地</td>
+                                <td>香港島</td>
+                                <td>九龍半島南部</td>
+                                <td>台灣、澎湖列島</td>
+                                <td>無</td>
+                            </tr>
+                            <tr>
+                                <td>4. 開放港口</td>
+                                <td>廣州、廈門、福州、寧波、上海</td>
+                                <td>牛莊、登州、台灣、淡水、潮州、瓊州、漢口、九江、南京、鎮江、天津</td>
+                                <td>沙市、重慶、蘇州、杭州</td>
+                                <td>列強在華劃分勢力範圍後，中國已全境開放。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 商務</td>
+                                <td>廢除公行制度，英人可在各口岸自由貿易。</td>
+                                <td>鴉片改稱洋藥，允許繳稅後合法進口。</td>
+                                <td>日本可在通商口岸投資設廠。</td>
+                                <td>無</td>
+                            </tr>
+                            <tr>
+                                <td>6. 關稅</td>
+                                <td>中英兩國秉公議定稅率。</td>
+                                <td>a. 進出口貨物稅率規定值百抽五。<br><br>b. 聘用洋人幫辦海關稅務。</td>
+                                <td>日本在華生產的貨物免納稅項。</td>
+                                <td>以關稅及鹽稅作為賠款的擔保。</td>
+                            </tr>
+                            <tr>
+                                <td>7. 國防</td>
+                                <td>英國軍艦可在各口岸停泊。</td>
+                                <td>外國軍艦可在內河航行。</td>
+                                <td>日船可沿內河駛入各通商口岸。</td>
+                                <td>a. 拆毀北京至大沽口沿線的炮台。<br><br>b. 各國可在北京、天津至山海關鐵路沿線駐兵。</td>
+                            </tr>
+                            <tr>
+                                <td>8. 司法</td>
+                                <td>領事裁判權</td>
+                                <td>領事裁判權</td>
+                                <td>領事裁判權</td>
+                                <td>領事裁判權</td>
+                            </tr>
+                            <tr>
+                                <td>9. 外交</td>
+                                <td>a. 兩國官方往來文書一概用平行款式。<br><br>b. 最惠國待遇。</td>
+                                <td>a. 中外互派公使。<br><br>b. 外國公使可常駐北京。<br><br>c. 最惠國待遇。</td>
+                                <td>最惠國待遇</td>
+                                <td>a. 在北京劃定使館區，由各國領事管理，並可駐兵。<br><br>b. 改總理衙門為外務部。</td>
+                            </tr>
+                            <tr>
+                                <td>10. 其他</td>
+                                <td>英人可在各口岸租地建屋，永久居住。</td>
+                                <td>a. 外國人可進入內地遊歷、通商、自由傳教。<br><br>b. 傳教士可在內地租買土地興建教堂。<br><br>c. 准許招聘華工出國。</td>
+                                <td>中國承認朝鮮獨立自主。</td>
+                                <td>a. 懲辦支援義和團的官員及派大臣赴德、日請罪。<br><br>b. 禁止中國人成立或參加仇外組織。<br><br>c. 部分地區停辦科舉。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <!-- 洋务运动部分 - 完整内容 -->
+                <section id="reform-movement" class="content-card">
+                    <h1><i class="fas fa-industry"></i> 圖強運動 / 洋務運動</h1>
+                    
+                    <h2>一、概況</h2>
+                    <p>英法聯軍之役後，清廷設立「<strong>總理各國事務衙門</strong>」，由奕訢、文祥、桂良等主持，專責外交事務，亦為辦理圖強運動的總機關。其後，又在天津、上海分設「<strong>北洋、南洋通商大臣</strong>」，負責對外貿易事宜。</p>
+                    
+                    <p>自強運動大抵可分為前後兩期，<strong>前期( 1861-1872 )「強兵」</strong>：學習西方船堅炮利，以製造武器、訓練新式海陸軍為要；<strong>後期（1873-1894）「富國」</strong>：開辦民用企業，拓展財源。</p>
+                    
+                    <h2>二、背景</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 戰敗刺激<br>第一次鴉片戰爭，中國敗於英國，朝廷還不承認本身的落後。到英法聯軍之役，連清室的頭號猛將僧格林沁亦一敗塗地。</td>
+                                <td>由於連續兩次慘敗於外國軍隊，終於警醒朝廷中有識之士，認為必須推行軍事等方面的改革，才可以改變中國的落伍。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 維持統治<br>太平天國興起，席捲半壁江山，甚至建都南京。清廷幾經艱苦，最終倚靠湘軍、淮軍配合外國的槍炮，方能平息叛變。</td>
+                                <td>事平以後，清室明白到要維持統治，保有政權，必須引入西方的先進軍備，方可鎮壓變亂，故願意推行改革。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 朝中大臣提倡<br>同治到光緒三十多年間，支持改革的中央官員有：恭親王奕訢、軍機大臣文祥；地方大員有：曾國藩、李鴻章、左宗棠、張之洞、劉坤一。</td>
+                                <td>他們或眼見外國強大的火力，或深深體會到洋人武器的厲害，又有鑑於列強不斷侵略中國，遂謀思中國自強，倡導學習西方。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 西方思潮<br>鴉片戰爭後，士子始倡研究西學。魏源提出「師夷之長技以制夷」。馮桂芬之說，則演成「中國為體，西學為用」。</td>
+                                <td>知識份子提倡西學，認為西方得以戰勝天朝上國，在於船堅炮利，科技先進，值得學習取長，由是推動了洋務運動的出現。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 經濟殘破<br>《南京》、《天津》、《北京》等條約簽訂後，清廷喪失了關稅自主權，又要開放商口，由是外國商品大量輸入，傾銷中國。</td>
+                                <td>外國的經濟侵略，嚴重打擊本土工業，危害國家財政。為了挽回頻臨破產的經濟體系，故倡議效法西方，振興實業，變法圖強。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>三、內容</h2>
+                    
+                    <h3>A. 軍事</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>內容</th>
+                                <th>說明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. 軍械</strong><br>a. 曾國藩、李鴻章：江南製造總局<br><br>b. 李鴻章：金陸製造局<br><br>c. 張之洞：漢陽兵工廠</td>
+                                <td>自強運動前期，以「強兵」為目標，強兵之基礎，在軍事工業製造槍炮火藥，所以創立了不少兵工廠，供應軍器。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. 陸軍</strong><br>a. 奕訢在天津組織洋槍隊<br><br>b. 李鴻章任用美國人華爾、英國人戈登</td>
+                                <td>清廷首度引入西式武器，訓練中國軍隊。至於外國軍事顧問，不少卻是無賴之輩，毫無辦事能力，前來中國不過貪婪高薪。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. 海軍</strong><br>a. 左宗棠：福州馬尾船局<br><br>b. 建立海軍衙門，置南洋、北洋和粵洋三支海軍。其中，北洋軍艦噸位佔世界第八。</td>
+                                <td>馬尾船船局在光緒十年(1884年)中法馬江之役其中被毁，福建水師亦死傷慘重，埋下甲午之戰失敗的伏線。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>B. 實業</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>內容</th>
+                                <th>說明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. 交通</strong><br>李鴻章：輪船招商局、京漢鐵路、津沽鐵路</td>
+                                <td>招商局是第一個官督商辦的民用企業，打破鴉片戰爭以來，列強壟斷航運的局面。鐵路運輸亦促進了中國內陸的交通。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. 電訊</strong><br>李鴻章：南北洋電報總局，完成鋪設上海至香港海底電線、天津至上海電線。</td>
+                                <td>1874年，日本侵略台灣，朝廷才認識電報的重要性，但到1880年，電報總局才成立。甲午之戰中，電報被截，高陞號遭擊沉。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. 開礦</strong><br>a. 李鴻章：天津開平礦務局<br><br>b. 張之洞：大冶礦廠、漢陽鐵廠</td>
+                                <td>由於生產軍器、運作戰艦和鐵路等需要，中國自建礦廠、鐵廠，供應煤、鐵等能源、原材料，減低對外國的倚賴。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. 紡織</strong><br>a. 左宗棠：蘭州機器織呢局<br><br>b. 張之洞：廣東繅絲局、武昌織布局</td>
+                                <td>不少官辦織廠最後都因經營不善而招民商承理。另外，亦有民辦的現代實業，如陳啟沅的繼昌隆繅絲廠，但為數甚少。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>C. 培育人才</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>內容</th>
+                                <th>說明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. 設館授徒</strong><br>a. 奕訢：同文館(北京)<br><br>b. 李鴻章：廣方言館(上海)<br><br>c. 其後廣州、廈門亦設同文館</td>
+                                <td>由外國人授課，學習英、法、俄等語言。其後，增設天文、化學、算學、格物四館，教授西方學術，培育翻譯、外交等人材。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. 翻譯典籍</strong><br>a. 江南製造局附設「譯書局」<br><br>b. 西洋傳教士李提摩太《泰西新史攬要》、林樂知《萬國公報》</td>
+                                <td>官方的，數年之間已譯出數理化等書籍百餘種；私人的，譯書的數量與種類更多，以至影響日後維新運動之發展。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. 出國留學</strong><br>同治十年(1871年)，容閎策劃派遣學童出國留學，前後赴美的學生有一百二十人，如詹天佑、唐紹儀等。</td>
+                                <td>雖然清廷於光緒七年(1881年)終止計劃，但當中不少學生進入哈佛、耶魯、麻省理工等美國著名大學就讀。</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. 培育軍材</strong><br>a. 左宗棠：船政學堂<br><br>b. 李鴻章：水師學堂、武備學堂</td>
+                                <td>學員不單在中國學習，亦有前往英、法、德等國家留學，學習西方的戰陣、船政、航海、科技等軍事知識。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>洋務運動示意圖（原文件中的media/image5.jpg）</p>
+                    </div>
+                    <p class="img-caption">洋務運動創辦的工業設施</p>
+                    
+                    <h2>四、失敗原因</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 洋務派侷限<br>自強運動中，大量設置兵工廠、建立新式海陸軍，延請西人教習，以至興辦紡織、鐵路、電力等實業。</td>
+                                <td>可是，洋務派堅持「中學為體，西學為用」，不知兵事背後有民政，外交背後有內務，只能學習外國的皮毛知識，缺乏基礎。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 洋務派不和<br>例如，李鴻章與左宗棠不和，中法越南戰爭，李的北洋艦隊拒援左；甲午戰爭，左的南洋艦隊拒援李。</td>
+                                <td>開明的洋務派要員在政府裏頭已佔少數，但猶不能團結一致，開創新局面。由是更讓保守份子有機可乘，攻擊不斷。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 管理落後<br>例如，官督商辦的企業，無需自負盈虧，賺賠與否由朝廷負責，官員乘機中飽私囊，貪污舞弊，又安插親朋戚友任職。</td>
+                                <td>自強運動雖引進西方的硬件設備，卻沒有新式的軟件制度相輔相承。結果毫無效率，虧損甚大，以至影響國家收入。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 資金困難<br>前期，兩次鴉片戰爭，賠款甚鉅；後期，慈禧又挪用三千萬北洋軍費，興建頤和園，其中又有八成為太監李蓮英侵吞。</td>
+                                <td>圖強運動需動用大量資金應付各種開支。可是，國庫空虛，甚至橫遭挪用，所以只好依靠地方財政，難免力有不逮。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 守舊派反對<br>朝中守舊派大臣如倭仁等，認為天朝無所不有，不假外求；又以為西方科技，是「奇巧淫技」，不值一學。</td>
+                                <td>由於守舊勢力仍佔朝廷的多數，他們敵視洋務運動，以至百般阻撓，令改革困難重重，事倍功半，終失敗收場。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 民眾反對<br>當時社會風氣保守，一般士紳和群眾亦排斥西洋事物，以至認為修築鐵路、鋪設電線、開採礦產會破壞風水。</td>
+                                <td>由於修路、鋪線、開礦等工程，難免拆毁民房和祖墳，激起百姓的反對。改革既未能得到地方的認同，自是難產收場。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>五、影響 / 評價</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 軍事改革<br>清廷逐漸改用西方武器，設立江南製造局等兵工廠；組織洋槍隊；建置南洋、北洋和粵洋等三支海軍。</td>
+                                <td>中國開始放棄了刀槍劍矛等傳統兵器，引進西洋火槍、船艦，提昇了戰鬥力。在中法越南戰爭中之得勝，可見一斑。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 開新式教育<br>自強運動中，朝廷設同文館等新式書院，教授外文和西方學術；同時，又派員前往歐美等地留學，學習各種知識。</td>
+                                <td>此為中國近現代化造就一批人材，如中國鐵路之父詹天佑、民國第一任總理唐紹儀。同時，亦開闢了西式教育之路。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 奠定工業基礎<br>官辦方面，如李鴻章創立輪船招商局，張之洞建置大冶礦廠、漢陽鐵廠，左宗棠成立蘭州機器織呢局等。民辦方面，如陳啟沅的繼昌隆繅絲廠</td>
+                                <td>官督商辦的企業，固然是近現代化的實業，而且，一些商人、豪紳也投資創立新式工業，即使規模甚少，但亦屬一重要開端。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <!-- 维新运动部分 - 完整内容 -->
+                <section id="reform-movement-2" class="content-card">
+                    <h1><i class="fas fa-book"></i> 維新運動</h1>
+                    
+                    <h2>一、背景</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 戰敗刺激<br>1895年，當《馬關條約》簽訂之際，康有為號召在京科考的千多名舉人，要求朝廷「拒和、遷都、練兵、變法」。</td>
+                                <td>中國自同治帝以來三十多年的圖強運動，竟不敵新興的日本，喪權辱國。有識之士皆以為必須推行更徹底的變法。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 瓜分危機<br>列強紛紛以不同的藉口，向清廷強行掠奪「租借地」，劃分勢力範圍，如德國強借膠州灣、英國佔威海衞等等。</td>
+                                <td>國家面對列強瓜分的危機，警醒了知識份子的憂患意識，深明進一步的改革，方可挽救病入膏肓的中國。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 明治影響<br>日本原為亞洲小國，備受列強欺凌。但經明治維新，短短二十年間，一躍而起，擊敗中國之餘，竟與歐美大國平起平坐。</td>
+                                <td>日本幅員狹小，資源貧乏，仍可經過變法而強大起來。中國朝野由是得到啟發，欲借日本成功經驗為鑑，推行改革。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 西學影響<br>例如，西洋傳教士李提摩太辦《泰西新史攬要》、林樂知辦《萬國公報》，鼓吹改革。此外，還有嚴復翻譯的《天演論》。</td>
+                                <td>當中，「物競天擇，適者生存」的「社會進化論」思想影響最深。有識之士以為中國必須推行變法，適應時勢，方可繼續生存。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 維新流播<br>康有為著《孔子改制考》、《大同書》等書；發起「強學會」、「保國會」等組織；出版《中外紀聞》、《時務報》等刊物。</td>
+                                <td>這些著作、學會和報刊，宣傳了維新的理念，鼓動維新思潮的興起，極力提倡改革，促成戊戌變法的出現。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 光緒改革<br>光緒帝雖貴為九五至尊，親政有年，但實權由始至終皆為慈禧太后所掌，不過一傀儡皇帝，鴻圖大志未能發揮。</td>
+                                <td>光緒帝眼見國家內憂外患，自己卻偏偏受制於慈禧。適逢康有為上書改革，故深受感動，決意推行變法，振興社稷。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>二、維新運動的經過和失敗</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>重點</th>
+                                <th>經過</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 公車上書</td>
+                                <td>1895年，當《馬關條約》簽訂之際，康有為號召在京科考的千多名舉人，要求朝廷「拒和、遷都、練兵、變法」，是為「公車上書」。上書未得應允，但內容廣為流傳，康儼然改革領袖。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 下詔變法</td>
+                                <td>1898年6月11日，德宗下詔變法。16日，康經德宗之師翁同龢的介紹，謁見德宗，闡釋其變法主張。德宗任康為總理衙門章京，許專摺奏事，開展維新運動。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 密謀奪權</td>
+                                <td>變法之初，慈禧即罷翁同龢之職，並命榮祿為直隸總督兼北洋大臣，嚴控京津。光緒帝亦密謀奪權，密詔袁世凱協助。袁向榮告密，慈禧囚光緒帝，重掌政權，下令捉拿維新派。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 流血收場</td>
+                                <td>康得英人相助，逃往香港；梁啟超日人相助，流亡日本。譚嗣同、楊銳、林旭、劉光第、康廣仁、楊深秀等「六君子」殉難。新政被罷，維新派被革被逐，改革失敗收場。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>三、內容</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>範疇</th>
+                                <th>重點</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 政治</td>
+                                <td>a. 裁汰冗員：撤銷通政司、光祿寺等閒散部門。<br><br>
+                                    b. 澄清吏治：簡化各衙門的規則，詔諭推薦新人。<br><br>
+                                    c. 廣開言路：准許一般官員，以至平民百姓上書奏事。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 軍事</td>
+                                <td>a. 裁減軍隊：裁撤綠營兵。<br><br>
+                                    b. 整頓軍備：軍隊改以西式槍炮訓練，添加新艦。<br><br>
+                                    c. 改革武舉：廢弓箭騎射，改考槍炮。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 經濟</td>
+                                <td>a. 編制預算：制訂國家預算，公佈財政收支。<br><br>
+                                    b. 設局管理：立路礦總局、農工商總局、各省商務局。<br><br>
+                                    c. 倡辦實業：創立商會、農會；授發明專利權。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 民教</td>
+                                <td>a. 改革科舉：廢除八股，改試策論，開經濟科。<br><br>
+                                    b. 設辦學校：創建京師大學堂，中小學生兼修中西，派員留學。<br><br>
+                                    c. 提倡翻譯：設置「譯書局」，翻譯西方著作。<br><br>
+                                    d. 新聞自由：准許開設報館，自由辦報。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>四、失敗原因</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 新黨無力<br>光緒帝雖稱親政，但二品以上官員的任命、重要決策等還需請示慈禧。康、梁等官職卑微，翁同龢變法四日即被革退。</td>
+                                <td>由於運動倚重光緒帝之力，但他卻無實權，由是變法難以推行。而且，維新派形勢孤單，力量薄弱，亦無法與慈禧對抗。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 舊派阻撓<br>康有為遷都之議，早激起京城保守派不滿。而且，洋務派的奕訢、李鴻章、張之洞亦不贊同維新派的主張。</td>
+                                <td>由於守舊勢力強橫，又未能爭取洋務派的支持，故維新派只能借助少數年青知識份子和開明士紳的協助，實力遠有不逮。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 未與洋務派合作<br>李鴻章曾派人送強國會2000兩銀遭康有為拒絕。梁啟超往見張之洞，張親自迎接，但維新派對張的態度，一直不冷不熱。</td>
+                                <td>維新派既勢孤力弱，但卻未有爭取與同情改革的洋務派合作，以得到、借助他們的支持和施政的經驗，由是失敗告終。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 滿漢衝突<br>維新派以漢族士子為主，如康、梁、譚嗣同、翁同龢等；慈禧亦有「寧予外邦，不予家奴」之想法，調動榮祿鎮壓。</td>
+                                <td>由此可見，這是新興漢族集團與舊有滿族貴戚的對壘。維新派又未能鼓動握有兵權的袁世凱相助，結果一敗塗地。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 推行過急<br>例如，在103天變法期間，推出百多項命令；又如主張開設「制度局」，卻無視軍機處和內閣六部的存在，致流言四起。</td>
+                                <td>由於維新派急於求成，力求「全變」、「速變」，致官員難以執行，人民無所適從。同時，亦忽略現實，引發內部不滿。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 外力介入<br>英、日支持光緒帝，俄國支持慈禧。適值日相伊藤博文訪京，慈禧疑維新派與日本勾結，遂先下手為強。</td>
+                                <td>維新運動背後，亦涉及英、日、俄的國際角力。俄國在政變後派兵入京，乃至有學者認為俄國涉及策動政變。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>五、影響</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 引入西方思潮<br>維新運動期間，出版《中外紀聞》、《時務報》、《強學報》等刊物。其後，康、梁繼續發表政見、翻譯西學。</td>
+                                <td>維新雖然失敗，但通過辦報、著書、翻譯等工作，引進西方的民主思潮，解放國人思想，以至傳播革命意識。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 引發義和團事件<br>戊戌政變後，康得英人相助，逃往香港；梁啟超日人相助，流亡日本。光緒帝亦得外國支持而不被罷黜。</td>
+                                <td>慈禧由是一直懷恨在心，到義和團出現，竟迷信拳民的力量，終致八國聯軍入京，慈禧挾光緒帝逃走西安之事。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 推動革命運動<br>維新運動由康、梁等鼓吹，在光緒帝的支持下推行；可惜不過百日，即被慈禧發動政變粉碎，改革全盤落空。</td>
+                                <td>由此可見，即使倚靠皇帝來施行變法，只要守舊的勢力、腐敗的清廷仍在，一樣無成。唯有通過革命，中國才有希望。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 民辦工業興起<br>維新運動提倡興辦民用實業，創立商會、農會；頒授發明專利權，承認商人合法投資的得益。</td>
+                                <td>洋務運動以官督商辦為主，政府主導，維新則轉為自由與辦企業，民間主導。由是民辦工業興起，紳商地位亦得以提高。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <!-- 革命运动部分 - 完整内容 -->
+                <section id="revolution" class="content-card">
+                    <h1><i class="fas fa-flag"></i> 革命運動</h1>
+                    
+                    <h2>一、背景</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 清廷腐敗無能<br>自鴉片戰爭始，清廷對外屢戰屢敗，繼有英法聯軍之役、甲午之役、八國敗軍之役，割地賠款，喪權辱國。</td>
+                                <td>中國已淪為列強的次殖民地，國人盡皆明白滿清的無能，唯有把其推翻，國家才有扭轉危局的希望，由是紛紛投入革命。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 漢滿持續衝突<br>一直以來，漢人反對清朝統治的活動頻仍，包括南方的秘密會社天地會；北方的秘密宗教白蓮教，以至後來的太平天國。</td>
+                                <td>滿漢兩族地位，高低有別，故漢人的反清思想從無間斷。因此，「驅除韃虜，恢復中華」的革命綱領，對民眾號召力極大。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 立憲運動失敗<br>八國聯軍之役後，實行「新政」，之後又推行所謂「立憲」。1911年，內閣成立，盡皆滿州權貴，被譏為「皇族內閣」。</td>
+                                <td>立憲運動不過是清廷的拖延手段，由是喪盡人心。不單革命派激烈反對，連立憲派、軍閥亦表不滿，不少因而支持革命。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 國家經濟破產<br>道光以後，國家已然入超；鴉片戰爭後，關稅率受到限制，不能超過百份之五。而且，對列強賠款的總數，約十億兩。</td>
+                                <td>朝廷因對外戰爭失敗而造成的種種經濟損失，全部轉嫁於百姓，又無方法改善人民生活。國家經濟破產，百姓支持革命。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 舊式士子無路<br>清代中葉以後，朝廷無財，對捐官多所接納，致通過科舉為官者，僅得一半。光緒三十年(1904年)，更停辦科舉。</td>
+                                <td>士子無法任官，已長期積怨，造成社會危機。廢科舉後，有錢的尚可出國留學，無錢的則投入新軍，日後參與革命。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 反清思潮形成<br>報刊方面有：《民報》、《國民報》、《蘇報》等；書籍方面有：章炳麟《駁康有為論革命書》、鄒容《革命軍》、陳天華《猛回頭》和《警世鐘等》。</td>
+                                <td>自八國聯軍之役後，投身革命的知識份子出版大量刊物，鼓吹革命，在輿論上戰勝了保皇黨，革命思潮風起雲湧。</td>
+                            </tr>
+                            <tr>
+                                <td>7. 順應世界潮流<br>十八世紀以後，革命風潮在世界形成，先後出現美國獨立革命、法國大革命、德國與意大利的統一活動等等。</td>
+                                <td>鴉片戰爭後，隨西學東傳，西方的民主、共和思想，在中國逐漸散播，國人的革命意識日夕高漲，終產生辛亥革命。</td>
+                            </tr>
+                            <tr>
+                                <td>8. 革命團體成立<br>例如，孫文的興中會，黃興的華興會，蔡元培的光復會等等。1905年，他們在日本組成「中國同盟會」。</td>
+                                <td>革命團體初期各自為政，成效不彰。到聯合組織同盟會建立，革命力量聯成一氣，形成風潮，武裝起義此伏彼起。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>二、革命運動的發展</h2>
+                    <div class="content-summary">
+                        <h4>主要革命活動</h4>
+                        <ul class="key-points">
+                            <li><strong>武裝起義迭起</strong>：早在1895年，孫文策動廣州起義，事敗，陸皓東等被捕遇害。1905年，同盟會成立後，革命活動轉趨活躍，單在1907年已先後發動五次起義。1907年，光復會在安徽、浙江策劃起義事敗，徐錫麟、秋瑾遇害。</li>
+                            <li><strong>黃花岡之役</strong>：1911年4月27日，黃興、朱執信、林覺民等百餘義士起義。他們雖攻入兩廣總督府，總督張鳴歧奔逃，但遭清軍包圍，終告失敗。百多位烈士陣亡，黃、朱負傷而逃。事後，收拾遺骸共72具，合葬黃花岡，史稱「黃花岡七十二烈士」。</li>
+                            <li><strong>四川保路風潮</strong>：二十世紀初，清廷擬向美國借款修川漢及粵漢鐵路，百姓反對，自行集資建路。1911年，清室強行收回，激起四川紳民組成「保路同志會」抗爭。四川總督血腥鎮壓，釀「成都慘案」。朝廷急調湖北軍隊入川，造成湖北的空虛，讓革命軍有機可乘。</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>三、辛亥革命的經過</h2>
+                    <div class="content-summary">
+                        <h4>辛亥革命關鍵步驟</h4>
+                        <ol class="key-points">
+                            <li><strong>策劃辛亥革命</strong>：同盟會深入湖北新軍進行革命推廣。隨保路風潮大盛，湖北革命黨人準備在1911年10月11日發動起義。10月9日，黨人在漢口俄租界製造炸彈時誤爆，由是被清兵偵破黨員名冊。革命黨於是決定提前在10日起義。</li>
+                            <li><strong>武昌起義成功</strong>：10月10日晚，新軍革命黨人在武昌發難，進攻總督衙門，湖廣總督瑞澂落荒而逃。一夜血戰，革命黨人成功佔領武昌，又迅即攻陷漢陽及漢口，成立湖北軍政府，推舉黎元洪任軍政府都督，宣佈獨立。</li>
+                            <li><strong>各省紛紛獨立</strong>：武昌起義成功後，湖南、陜西、江西省隨即響應，其他各省亦紛紛宣佈獨立。年底前，全國剩下直隸、山東、河南、東三省和西北仍受清廷控制。袁世凱復出，任內閣總理大臣兼湖廣總督，攻佔漢口、漢陽，成南北對立之勢。</li>
+                            <li><strong>中華民國成立</strong>：各省獨立後，意見分歧，至孫文回國，獲各省一致擁戴。1912年元旦，孫就任臨時大總統，宣佈中華民國成立。袁派唐紹儀與革命黨議和，達成協議：清帝退位、袁贊同共和，孫讓總統位於袁。2月12日，清帝遜位，結束268年統治。</li>
+                        </ol>
+                    </div>
+                    
+                    <h2>四、武昌起義成功原因</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 官員潛逃<br>1911年10月10日晚，新軍革命黨人在武昌發難，進攻總督衙門，湖廣總督瑞澂落荒而逃。革命成功，建立湖北軍政府。</td>
+                                <td>孫文曾說，武昌之成功，乃成於意外，其主因在瑞澂一逃。於此可見，由於清廷官員懦弱無能，狼狽潛逃，令起義得以成功。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 新軍勇猛<br>湖北新軍革命黨人原準備10月11日發難。9日，黨人名冊被清兵偵破，革命黨於是決定提前在10日起義。</td>
+                                <td>名冊被偵破後，湖北革命黨不少頭領出走，3名黨人被擒就義。當此群龍無首之際，新軍革命黨人放手一博，終成革命大業。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 防衞空虛<br>1911年，清室強行收回民有鐵路，激起四川紳民抗爭。四川總督血腥鎮壓，釀「成都慘案」，朝廷急調湖北軍隊入川。</td>
+                                <td>湖北革命黨由兩湖人士組成，熟悉環境。他們趁湖北軍防空虛，發動營內新軍起義，經過一夜激戰，破總督府，武昌起義成功。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>五、革命成功原因</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 同革命原因1：清廷無能</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2. 同革命原因4：經濟破產</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3. 同革命原因6：反清思潮</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4. 袁世凱倒戈<br>武昌起義成功後，袁世凱復出，任內閣總理大臣兼湖廣總督。一方面，他派兵攻佔漢口、漢陽；一方面，派員與革命黨和談。</td>
+                                <td>袁世凱控制北洋軍，是清廷最後皇牌。由於從革命黨手中取得優厚條件：任大總統，故袁反過來脅迫清帝退位，結束滿清統治。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 孫文之功<br>孫文建興中會，後又組成同盟會，提出「驅除韃虜，恢復中華，創立民國，平均地權」的口號，在海外宣傳，籌款支持革命。</td>
+                                <td>孫文建立革命團體，組織反清活動，包括在海內外宣傳革命、招攬革命精英份子，策劃武裝起義，促成辛亥革命的成功。</td>
+                            </tr>
+                            <tr>
+                                <td>6. 孫文回歸<br>起義成功後，各省獨立，但群龍無首，意見分歧，臨時政府幾無法成立。幸孫文年底前回國，獲一致推舉，任大總統之職。</td>
+                                <td>孫文一直參與策劃革命，在海外籌募經費，廣受推崇。正正憑其威望，及時歸來主持大局，免革命陣營分裂，保有革命成果。</td>
+                            </tr>
+                            <tr>
+                                <td>7. 立憲派倒戈<br>清末，民間要求「立憲」，各省成立「諮議局」，發起請願。1911年，清廷成立內閣，盡皆滿州權貴，被譏為「皇族內閣」。</td>
+                                <td>由於清廷曾採武力鎮壓請願，令不少立憲派轉投革命；皇族內閣之立，亦令民心盡失。到武昌革命成功，各省遂加入獨立。</td>
+                            </tr>
+                            <tr>
+                                <td>8. 華僑支持<br>華僑子弟回國參與起義，如黃花岡之役中，就有二十九位華僑參與。此外，僅1911年，南洋華僑捐款港幣5百多萬。</td>
+                                <td>由於愛國的熱枕、孫文的積極游說，華僑鼎力支持革命。既不惜生命，歸來參加起義，又或捐獻錢財，促成革命的成功。</td>
+                            </tr>
+                            <tr>
+                                <td>9. 列強中立<br>武昌起義成功後，清廷向列強領事訛稱拳民亂事再起，要求派兵協助。法國領事拒絕出力，列強由是紛紛宣佈中立。</td>
+                                <td>既由於孫文不斷在歐、日等地宣揚革命，爭取支持成功；也因士紳倒戈，說服各國領事，令列強在關鍵時刻，並無派兵插手，干預政局，中國得保革命成果。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>六、革命之隱憂</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 民主意識薄弱<br>革命推翻了二千年的皇帝制度，建立共和政體。可是，國人對民族、民權、民生的三民主義，或者共和、民主之真義卻不了解。</td>
+                                <td>因此，即使革命令中層勢力抬頭，但他們經歷二百多年的異族統治、受八股科舉的，仍不脫升官發財、結黨爭權的舊習氣。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 革命力量有限<br>辛亥革命成功後，共20個地區響應獨立，其中長江以南佔16個，北方大抵仍由清廷控制，形成南北對峙的局面。</td>
+                                <td>總體來說，南方響應革命之省份數量雖然甚多，但不過乘勢而起，論軍事、以至經濟力量，卻遠遠未及得上北方的舊勢力。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 地方各自為政<br>辛亥革命成功，造成骨牌效應，各省紛紛獨立。但是，同盟會並不能控制全局，如蘇州、桂林都由舊官僚出身者主持政治。</td>
+                                <td>即使孫文被各省推為臨時大總統，但各省依然各自為政，團結不足，故難與袁世凱抗衡，甚至造成日後地方分裂之局。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 政治取態分歧<br>革命政府由不同人物組成。例如，孫文、黃興是革命黨；黎元洪、伍廷芳是舊官僚；張謇、湯壽潛是立憲派。</td>
+                                <td>雖說是一種「全民革命」，但龐雜不一的政治力量結集，難免意見分歧，無法團結一致。最後讓袁世凱有機可乘，騎劫革命成果。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>七、辛亥革命的歷史意義</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>史料</th>
+                                <th>分析</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 推翻帝制<br>公元前221年，秦始皇滅六國統一天下，建立皇帝制度，中國奉之二千多年。直到1911年，辛亥革命成功，帝制方才終結。</td>
+                                <td>辛亥革命順應世界潮流，廢除皇帝制度。自此以後，帝制亦為國人唾棄，無論袁世凱稱帝或張勳復辟，都以失敗收場。</td>
+                            </tr>
+                            <tr>
+                                <td>2. 建立共和<br>辛亥革命成功後，十七省代表在南京成立臨時政府。1912年元旦，孫文、黎元洪就職中華民國正副總統。</td>
+                                <td>中華民國以共和、民主立國。簡言之，共和為非皇帝血緣傳承的政治制度，民主則強調人民以選舉等形式參與政治。此等皆是中國歷史的創舉。</td>
+                            </tr>
+                            <tr>
+                                <td>3. 改變體制<br>由秦代三公九卿制演變為唐代三省六部制，延至清代，中央政制大抵相沿。直到革命成功後，實行責任內閣和民選國會制。</td>
+                                <td>中國政制出現了翻天覆地的轉變。內閣與國會都是模仿現代西方先進國家的體制，尤其國會由人民選舉產生，更是前所未見。</td>
+                            </tr>
+                            <tr>
+                                <td>4. 解放思想<br>三民主義為革命綱領。民族主義改為強調漢滿蒙回藏五族共和；民權主義包括了立法、司法、行政、考試、監察等五權；民生主義強調各階層經濟地位平等。</td>
+                                <td>自漢代獨尊儒術起，儒家為中國思想主流，歷二千年而不衰。民國建立，以西方民主、分權等思想為主導，解放傳統思想。</td>
+                            </tr>
+                            <tr>
+                                <td>5. 民族實業<br>三民主義中的民生主義，着力改善經濟，發展實業。民國成立後，工廠、銀行、貿易、運輸等各類行業、機構紛紛出現。</td>
+                                <td>中國數千年來以農立國，民生主義滲入了不少資本主義成份，令西方式工業、金融業等，如雨後春筍，
